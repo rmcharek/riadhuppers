@@ -1,5 +1,5 @@
 {
-  "name": "web-app-boilerplate",
+  "name": "riadhuppers",
   "version": "1.0.0",
   "description": "github test",
   "main": "index.js",
@@ -7,18 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && npm start",
     "server": "node index.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
+    "client:build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rmcharek/web-app-boilerplate.git"
+    "url": "git+https://github.com/rmcharek/riadhuppers.git"
   },
   "author": "riadh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rmcharek/web-app-boilerplate/issues"
+    "url": "https://github.com/rmcharek/riadhuppers/issues"
   },
-  "homepage": "https://github.com/rmcharek/web-app-boilerplate#readme",
+  "homepage": "https://github.com/rmcharek/riadhuppers#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "concurrently": "^6.4.0",
