@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(morgan('common', { immediate: true }));
 
 app.use('/login', loginRouter);
-app.use('/product', expressJwt({ secret: 'secret' }), productRouter);
+app.use('/product', expressJwt({ secret: 'secret' , algorithms: ['RS256'] }), productRouter);
 
 
 app.use(function(err, request, response, next) {

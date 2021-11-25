@@ -1,6 +1,4 @@
 const model = require('./model');
-const jsonXml = require('jsontoxml');
-
 function getLinks(current, base) {
   const links = [
     { rel: 'base', href: base + '/' },

@@ -1,35 +1,31 @@
 {
-  "name": "listing_1.2",
+  "name": "web-app-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "github test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && npm start",
     "server": "node index.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
-    "client:build": "cd client && npm run build"
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmcharek/web-app-boilerplate.git"
+  },
+  "author": "riadh",
   "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.3",
-    "concurrently": "^6.4.0",
-    "connect-ensure-login": "^0.1.1",
-    "express": "^4.16.3",
-    "express-jwt": "^5.3.1",
-    "express-session": "^1.15.6",
-    "jsontoxml": "^1.0.0",
-    "jsonwebtoken": "^8.2.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.15",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
-    "pug": "^2.0.3",
-    "sqlite3": "^4.1.1"
+  "bugs": {
+    "url": "https://github.com/rmcharek/web-app-boilerplate/issues"
   },
-  "engines": {
-    "node": "12.19.0"
+  "homepage": "https://github.com/rmcharek/web-app-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-jwt": "^6.1.0",
+    "nodemon": "^2.0.15"
   }
 }
